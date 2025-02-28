@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Countdown Timer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Editable Title Bar as Input -->
+        <input type="button" class="title-input" id="event-title" value="⏳ Countdown Timer" onclick="editTitle()">
+        
+        <label for="event-input">Set Your Event Date & Time:</label>
+        <input type="datetime-local" id="event-input">
+        
+        <button onclick="setCountdown()">Start Countdown</button>
+        <button onclick="resetCountdown()">Reset Countdown</button>
+
+        <div class="countdown">
+            <div class="time-box"><span id="days">00</span> Days</div>
+            <div class="time-box"><span id="hours">00</span> Hours</div>
+            <div class="time-box"><span id="minutes">00</span> Minutes</div>
+            <div class="time-box"><span id="seconds">00</span> Seconds</div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
